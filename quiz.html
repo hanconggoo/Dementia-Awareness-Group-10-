@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dementia Quiz</h1>
+      <h2 class="choose">Choose a Topic</h2>
+      <ul class="topic-list">
+        <li onclick="startQuiz('symptoms')">Dementia Symptoms</li>
+        <li onclick="startQuiz('behaviors')">
+          Dealing with Dementia Behaviors
+        </li>
+        <li onclick="startQuiz('communication')">Communication Tips</li>
+      </ul>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
