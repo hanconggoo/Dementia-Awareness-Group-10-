@@ -31,8 +31,6 @@ if (isset($_SESSION["email"])) {
       $score_topic2 = 0;
       $score_topic3 = 0;
   }
-
-  // ... (rest of your code)
 } else {
   // Handle the case when the user is not logged in
   $score_topic1 = 0;
