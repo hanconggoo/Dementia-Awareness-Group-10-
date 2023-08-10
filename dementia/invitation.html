@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="invitation.css" rel="stylesheet" />
+    <title class="asdf">Send Invitation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Send Invitation</h1>
+      <form action="generate_invitation.php" method="post">
+        <div class="input-container">
+          <label for="toEmail">Recipient's Email:</label>
+          <input type="email" id="toEmail" name="toEmail" required />
+        </div>
+
+        <div class="input-container">
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            value="Let's understand dementia together"
+            required
+          />
+        </div>
+
+        <div class="input-container">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="50" required>
+Hello,
+
+You are invited to join us and understand dementia together. Click on the link below to visit our website:
+
+[Website URL]
+
+Best regards,
+[Your Name]</textarea
+          >
+        </div>
+        <input type="submit" class="invite-btn" value="Send Invitation" />
+      </form>
+    </div>
+  </body>
+</html>
